@@ -1,0 +1,8 @@
+<h1>Blog posts</h1>
+<% @posts.each do |elem| %>
+<div class="well">
+    <h1><%= elem.id %> : <%= elem.title %></h1>
+    <p><%= elem.body %></p>
+    <div><%= <%= link_to "Read More", post_path(post), :class => 'btn btn-default' %></div>
+</div>
+<% end %>

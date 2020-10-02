@@ -1,0 +1,15 @@
+<h1>Blog posts</h1>
+<table class='table'>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Body</th>
+    </tr>
+    <% @posts.each do |elem| %>
+    <tr>
+        <th><%= elem.id %></th>
+        <th><%= elem.title %></th>
+        <th><%= elem.body %></th>
+    </tr>
+    <% end %>
+</table>

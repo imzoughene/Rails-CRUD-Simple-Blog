@@ -18,22 +18,10 @@
 </div>
 <div class="row">
     <div class="col-sm-12 py-4">
-<% if(@post.comments.length) %>
-<h3>Comments</h3>
-<% end %>
-<ul>
-<% @post.comments.each do |elem| %>
-    <li><strong> <%= elem.username %></strong> : <%= elem.body %></li>
-<% end %>
-</ul>
-</div>
-</div>
-<div class="row">
-    <div class="col-sm-12 py-4">
         <h1>Add Comment</h1>
     </div>
 </div>
-<%= form_for ([@post,@post.comments.build])   do |f| %>
+<%= form_for (@post,@post.comments.build)   do |f| %>
     <% if (@post.errors.any?) %>
         <% @post.errors.full_messages.each do |msg| %>
             <div class="alert alert-danger"><%= msg %></div>

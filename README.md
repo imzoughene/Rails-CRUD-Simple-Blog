@@ -1,5 +1,13 @@
 # README
-
+<br/>
+<img src="/screen/gitkraken.PNG">
+<br/>
+<img src="/screen/blog home page.PNG">
+<br/>
+<img src="/screen/git bash.PNG">
+<br/>
+<img src="/screen/vscode.PNG">
+<br/><br/><br/><br/><br/>
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
